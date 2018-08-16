@@ -31,7 +31,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '478949105771610112).setName("W");
+client.channels.find('id', '478949105771610112').setName("W");
 client.channels.find('id', '478949105771610112').setName("We");
 client.channels.find('id', '478949105771610112').setName("Wel");
 client.channels.find('id', '478949105771610112').setName("Welc");
