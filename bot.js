@@ -31,18 +31,18 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 
 client.on("ready", async  => {
 setInterval(function(){
-client.channels.find('id', '478949105771610112).setName("𝐖");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃𝐌");
-client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃𝐌𝐑");
+client.channels.find('id', '478949105771610112).setName("W");
+client.channels.find('id', '478949105771610112').setName("We");
+client.channels.find('id', '478949105771610112').setName("Wel");
+client.channels.find('id', '478949105771610112').setName("Welc");
+client.channels.find('id', '478949105771610112').setName("Welco");
+client.channels.find('id', '478949105771610112').setName("Welcom");
+client.channels.find('id', '478949105771610112').setName("Welcome");
+client.channels.find('id', '478949105771610112').setName("Welcome T");
+client.channels.find('id', '478949105771610112').setName("Welcome To");
+client.channels.find('id', '478949105771610112').setName("Welcome To D");
+client.channels.find('id', '478949105771610112').setName("Welcome To DM");
+client.channels.find('id', '478949105771610112').setName("Welcome To DMR");
   }, 3000);
 });
 
