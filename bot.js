@@ -28,4 +28,29 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+
+client.on("ready", async  => {
+setInterval(function(){
+client.channels.find('id', '478949105771610112).setName("𝐖");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃𝐌");
+client.channels.find('id', '478949105771610112').setName("𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐃𝐌𝐑");
+  }, 3000);
+});
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
