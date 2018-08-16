@@ -52,8 +52,8 @@ client.on('message', message => {
     let copy = "BY XMAS";
     let request = Requested By ${message.author.username};
     if (!args) return message.reply('
-يجب عليك كتابة كلمة او جملة لإرسال البرودكاست
-');message.channel.send(**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \ ${args}``).then(msg => {
+
+     ');message.channel.send(**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \ ${args}``).then(msg => {
     msg.react(':white_check_mark:')
     .then(() => msg.react(':x:'))
     .then(() =>msg.react(':white_check_mark:'))
