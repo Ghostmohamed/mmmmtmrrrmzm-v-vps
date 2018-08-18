@@ -196,52 +196,18 @@ client.on('ready', () => {
 
 
 
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'السلام عليكم ') {
-              message.channel.send('**وعليكم السلام ورحمة الله وبركاته**');
+            if (message.content === 'باك') {
+              message.channel.send('**ولكم**');
               
                
 
             }
 });
 
-
-
-
-
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'باك ') {
-              message.channel.send('**ولككم حبيبي**');
-              
-               
-
-            }
-});
-
-
-
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'برب ') {
-              message.channel.send('**تيت . لاتتأخر علينا حبيبي**');
-              
-               
-
-            }
-});
 
 
 
