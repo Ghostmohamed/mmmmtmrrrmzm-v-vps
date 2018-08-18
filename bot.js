@@ -429,7 +429,7 @@ client.on('message', message => {
 
 
 
-const jackeo = ['ايدي الحسب ' , 'هنا ايدي الاونر' , 'ايدي الاونر لثاني' , '']; //Jackeo  حقوقي
+const jackeo = ['347048358529204226 ' , 'هنا ايدي الاونر' , '370672042627825666' , '']; //Jackeo  حقوقي
 client.on('message', message => { //Jackeo  حقوقي
 var prefix = "."; //Jackeo  حقوقي
   if (message.author.bot) return; //Jackeo  حقوقي
