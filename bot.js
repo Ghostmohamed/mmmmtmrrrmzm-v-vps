@@ -534,7 +534,22 @@ client.channels.find('id', '480452275597213696').setName(`Date : ${Codes} - ${Co
 
 
 
+const perfix = '.';
+client.on('message', msg => {
+ if (msg.content.startsWith(prefix + 'send')) {
+      let args = msg.content.split(' ').slice(1)
+      if (!args[0]) return msg.reply(`**منشن الشخص اولا**`)
+      if (!args[1]) return msg.reply(`**ما هي الرساله المطلوب ارسالها**`)
+      let norElden = msg.mentions.members.first()
+      if (!norElden) return msg.reply(`**يجب تحديد الشخص**`)
+      let norEldenEmbed = new Discord.RichEmbed()
+      .setTitle(`**رسالة جديده لك من شخص ما**`)
+      .setDescription(args.join(" "))
 
+      client.users.get(`${norElden.id}`).send(norEldenEmbed)
+      msg.reply(`**تم ارسال الرساله**`)
+    }
+});
 
 
 
