@@ -293,7 +293,7 @@ client.on("guildMemberAdd", function(member) {
 
 
   client.on('message', message => {
-    var prefix = "+"
+    var prefix = "."
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -418,27 +418,25 @@ client.on('message', message => {
    message.author.sendMessage(`
    **
   [❖═════اومر ادمن═══════❖]
-  ❖ $$kick <mention > ➾  kickلي اعطاء شخص
 
   ❖ .emb ➾  يكرر الكلام الذي تقولة بطريقة مزخرفة
   
   ❖ .say  ➾ يكرر الكلام الذي تقولة
-  
-  ❖ $$ban <mention> ➾ لي اعطاء شخص بان
-  
-  ❖ $$unban <mention> ➾ لي فك بان عن شخص
-  
+    
   ❖ .clear <members> ➾ لي مسح الشات
-  
-  ❖ $$mute <mention> ➾ لي اعطاء ميوت لي شخص
   
   ❖ .bc4 <message>  ➾ لي ارسال رسالة لي كل الاعضاء
 
-  ❖ ملاحظة لا يزال الهيلب في التطوير  ➾ سفـاح و جوست
+  ❖ **ملاحظة لا يزال الهيلب في التطوير  ➾ **سفـاح و جوست
 
-  ❖ #server ➾ لي معرفة معلومات عن السيرفر
+  ❖ .server ➾ لي معرفة معلومات عن السيرفر
 
   ❖ .ping  ➾ لي معرفة بنق البوت
+  
+  ❖ .report <mention>  ➾ لي الإبلاخ عن عضو
+
+  ❖ .id <mention>  ➾ لي معرفة كل المعلومات عنك 
+
   **
   `);
   
