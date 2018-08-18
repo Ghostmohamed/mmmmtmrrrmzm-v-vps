@@ -439,7 +439,7 @@ client.on('message', message => {
 
 
 
-const jackeo = ['347048358529204226 ' , '302119314075680768' , '370672042627825666' , '']; //Jackeo  حقوقي
+const jackeo = ['347048358529204226' , '302119314075680768' , '370672042627825666' , '']; //Jackeo  حقوقي
 client.on('message', message => { //Jackeo  حقوقي
 var prefix = "."; //Jackeo  حقوقي
   if (message.author.bot) return; //Jackeo  حقوقي
