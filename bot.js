@@ -213,18 +213,6 @@ client.on('ready', () => {
 
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'سلام عليكم ') {
-              message.channel.send('**وعليكم السلام ورحمة الله وبركاته**');
-              
-               
-
-            }
-});
-
 
 
 client.on('ready', () => {
@@ -240,17 +228,7 @@ client.on('ready', () => {
 });
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'باكك ') {
-              message.channel.send('**ولككم حبيبي**');
-              
-               
 
-            }
-});
 
 
 client.on('ready', () => {
@@ -265,19 +243,6 @@ client.on('ready', () => {
             }
 });
 
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'يلا برب ') {
-              message.channel.send('**تيت . لاتتأخر علينا حبيبي**');
-              
-               
-
-            }
-});
 
 
 
@@ -432,7 +397,7 @@ client.on("message", message => {
 
 client.on('message', message => {
       if (message.author.bot) return;
-      var prefix ="$$"
+      var prefix ="."
        if (message.content === prefix + "help-admin") {
         if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
        message.channel.send('**تم ارسال رسالة في الخاص**');
@@ -445,30 +410,31 @@ client.on('message', message => {
   [❖═════اومر ادمن═══════❖]
   ❖ $$kick <mention > ➾  kickلي اعطاء شخص
 
-  ❖ $$setvoice  لي انشاء روم فويس اونلاين
+  ❖ .emb ➾  يكرر الكلام الذي تقولة بطريقة مزخرفة
   
-  ❖ $$say  ➾ يكرر الكلام الذي تقولة
+  ❖ .say  ➾ يكرر الكلام الذي تقولة
   
   ❖ $$ban <mention> ➾ لي اعطاء شخص بان
   
   ❖ $$unban <mention> ➾ لي فك بان عن شخص
   
-  ❖ .clear ➾ لي مسح الشات
+  ❖ .clear <members> ➾ لي مسح الشات
   
   ❖ $$mute <mention> ➾ لي اعطاء ميوت لي شخص
-  
-  ❖ $$ct <name> ➾ لي انشاء روم كتبي
-  
-  ❖ $$cv <name> ➾لي انشاء روم صوتي
   
   ❖ .bc4 <message>  ➾ لي ارسال رسالة لي كل الاعضاء
 
   ❖ ملاحظة لا يزال الهيلب في التطوير  ➾ سفـاح و جوست
+
+  ❖ #server ➾ لي معرفة معلومات عن السيرفر
+
+  ❖ .ping  ➾ لي معرفة بنق البوت
   **
   `);
   
       }
   });
+
 
 
 
