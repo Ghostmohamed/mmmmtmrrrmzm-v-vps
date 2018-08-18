@@ -340,47 +340,6 @@ client.on("message", message => {
 
 
 
-client.on('message', message => {
-      if (message.author.bot) return;
-      var prefix ="$$"
-       if (message.content === prefix + "help-admin") {
-        if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
-       message.channel.send('**تم ارسال رسالة في الخاص**');
-  
-  
-  
-  
-   message.author.sendMessage(`
-   **
-  [❖═════اومر ادمن═══════❖]
-  ❖ $$kick <mention > ➾  kickلي اعطاء شخص
-
-  ❖ $$setvoice  لي انشاء روم فويس اونلاين
-  
-  ❖ $$say  ➾ يكرر الكلام الذي تقولة
-  
-  ❖ $$ban <mention> ➾ لي اعطاء شخص بان
-  
-  ❖ $$unban <mention> ➾ لي فك بان عن شخص
-  
-  ❖ $$clear ➾ لي مسح الشات
-  
-  ❖ $$mute <mention> ➾ لي اعطاء ميوت لي شخص
-  
-  ❖ $$ct <name> ➾ لي انشاء روم كتبي
-  
-  ❖ $$cv <name> ➾لي انشاء روم صوتي
-  
-  ❖ $$bc <message>  ➾ لي ارسال رسالة لي كل الاعضاء
-  **
-  `);
-  
-      }
-  });
-
-
-
-
 
 
 
@@ -429,7 +388,7 @@ client.on('message', message => {
 
 
 
-const jackeo = ['347048358529204226 ' , 'هنا ايدي الاونر' , '370672042627825666' , '']; //Jackeo  حقوقي
+const jackeo = ['347048358529204226 ' , '302119314075680768' , '370672042627825666' , '']; //Jackeo  حقوقي
 client.on('message', message => { //Jackeo  حقوقي
 var prefix = "."; //Jackeo  حقوقي
   if (message.author.bot) return; //Jackeo  حقوقي
@@ -459,7 +418,7 @@ if (command == "emb")    { //Jackeo  حقوقي
 
 
 
-const devs = ['347048358529204226' , '370672042627825666' , '' , ''];
+const devs = ['347048358529204226' , '370672042627825666' , '302119314075680768' , ''];
 const adminprefix = ".";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
