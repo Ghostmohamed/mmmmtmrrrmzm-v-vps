@@ -244,7 +244,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'من يريد مصامة ما تخلص:lollipop:') {
+            if (message.content === 'من يريد مصامة ما تخلص') {
               message.channel.send('**أنـا أنــا  :stuck_out_tongue_closed_eyes:**');
               
                
