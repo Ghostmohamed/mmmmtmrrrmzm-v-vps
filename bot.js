@@ -201,12 +201,45 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'باك') {
-              message.channel.send('**ولكم**');
+              message.channel.send('**ولكم حبيبي نورت الكلان**');
               
                
 
             }
 });
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'برب') {
+              message.channel.send('**تيــت . مع السلامة**');
+              
+               
+
+            }
+});
+
+
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'يلا برب') {
+              message.channel.send('**تيــت . مع السلامة**');
+              
+               
+
+            }
+});
+
+
+
 
 
 
