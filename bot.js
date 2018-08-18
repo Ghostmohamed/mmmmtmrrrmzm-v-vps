@@ -566,7 +566,7 @@ client.on('message', msg => {
 
   client.on('ready', function(){
     var ms = 1000 ;
-    var setGame = [`$h `,` $he`,`$hel`,`$help`];
+    var setGame = [`D `,` M`,`R`,];
     var i = -1;
     var j = 0;
     setInterval(function (){
