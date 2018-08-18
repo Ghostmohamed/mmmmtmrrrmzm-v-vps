@@ -340,6 +340,46 @@ client.on("message", message => {
 
 
 
+client.on('message', message => {
+      if (message.author.bot) return;
+      var prefix ="$$"
+       if (message.content === prefix + "help-admin") {
+        if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
+       message.channel.send('**تم ارسال رسالة في الخاص**');
+  
+  
+  
+  
+   message.author.sendMessage(`
+   **
+  [❖═════اومر ادمن═══════❖]
+  ❖ $$kick <mention > ➾  kickلي اعطاء شخص
+
+  ❖ $$setvoice  لي انشاء روم فويس اونلاين
+  
+  ❖ $$say  ➾ يكرر الكلام الذي تقولة
+  
+  ❖ $$ban <mention> ➾ لي اعطاء شخص بان
+  
+  ❖ $$unban <mention> ➾ لي فك بان عن شخص
+  
+  ❖ $$clear ➾ لي مسح الشات
+  
+  ❖ $$mute <mention> ➾ لي اعطاء ميوت لي شخص
+  
+  ❖ $$ct <name> ➾ لي انشاء روم كتبي
+  
+  ❖ $$cv <name> ➾لي انشاء روم صوتي
+  
+  ❖ $$bc <message>  ➾ لي ارسال رسالة لي كل الاعضاء
+  **
+  `);
+  
+      }
+  });
+
+
+
 
 
 
