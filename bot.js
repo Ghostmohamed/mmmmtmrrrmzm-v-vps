@@ -287,7 +287,80 @@ message.channel.send({embed});
 
 
 
+client.on('ready', () = {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message = {
+            if (message.content === 'السلام عليكم') {
+              message.channel.send('و عليكم السلام');
+              message.channel.sendFile(.Photo.PNG);
+               
 
+            }
+});
+كود الرد مع الصورة
+const Discord = require("discord.js"); // بكج
+const bot = new Discord.Client({disableEveryone: true});
+const fs = require('fs'); // بكج
+let credits = JSON.parse(fs.readFileSync("./credits.json", "utf8"));
+
+bot.on('ready', () => {
+    console.log("Credits Bot Version 1.0.0")
+    console.log("By ! Abdulrhman | Official Coding")
+});
+
+bot.on('message', async message => { // نظام الكريدت
+  if(message.author.bot) return; // اذا كان المرسل بوت م يرد عليه
+    
+
+    if(!credits[message.author.id]) { // اذا م كان معاه كريدت
+      credits[message.author.id] = {
+        credits: 200 // عدد الكريدت الاساسي
+      };
+    }
+
+let cred = credits[message.author.id].credits  // تعريف للكريدتس الخاصة بالعضو
+
+let creditsAmt = Math.floor(Math.random() * 20) + 1; // رقم عشوائي
+    let baseAmt = Math.floor(Math.random() * 20) + 1;  // رقم عشوائي
+
+    console.log(`${creditsAmt};${baseAmt}`); 
+
+    if(creditsAmt == baseAmt) {  // اذا كان الرقمين يتطابقان مع بعضهما
+      credits[message.author.id] = {
+        credits: cred + creditsAmt  
+      };
+    }
+
+    fs.writeFile('./Storage/credits.json', JSON.stringify(credits), (err) => {  // الكتابة في ملف
+      if(err) console.log(err)
+    });
+
+let men = message.mentions.users.first();
+
+    if(message.content.startsWith("#credits")) {
+if(!men) { // اذا لم يكن هناك منشن
+      message.reply(`You have ${cred} credits`)
+    }
+
+    if(men) { // اذا وجد منشن
+
+    if(!credits[men.id]) {
+       credits[men.id] = {credits: 200}
+    }
+
+    fs.writeFile('./Storage/credits.json', JSON.stringify(credits), (err) => {if(err) console.log(err)})
+
+    let c = credits[men.id].credits
+
+    message.channel.send(`${men} Have ${c} credits`)
+
+    }
+    }
+
+
+
+});
 
 
 
