@@ -485,6 +485,36 @@ client.on('message', message => {
 
 
 
+var ss = 0;
+
+client.on('voiceStateUpdate', (o,n) => {
+    if (o.voiceChannel && !n.voiceChannel) {
+        ss-=1
+        n.guild.channels.get("أيدي الروم").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    };
+    if (n.voiceChannel && !o.voiceChannel) {
+        ss+=1
+        n.guild.channels.get("أيدي الروم").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    }
+})
+client.on("ready", () => {
+    client.guilds.get("أيدي السيرفر").members.forEach(m => {
+        if (m.voiceChannel) {
+            ss+=1
+        };
+        client.channels.get("ايدي الروم").edit({
+            name : "Voice Online : [" + ss+ "]"
+        })
+    });
+    client6.user.setGame("HerpoPlex Community©", "https://twitch.tv/©");
+});
+// جميع الحقوق محفوظة لدى : ! M, ♪ ♡#6456
+
+
 
 
 
