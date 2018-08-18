@@ -510,7 +510,7 @@ client.on("ready", () => {
             name : "Voice Online : [" + ss+ "]"
         })
     });
-    client6.user.setGame("HerpoPlex Community©", "https://twitch.tv/©");
+    client.user.setGame("HerpoPlex Community©", "https://twitch.tv/©");
 });
 // جميع الحقوق محفوظة لدى : ! M, ♪ ♡#6456
 
