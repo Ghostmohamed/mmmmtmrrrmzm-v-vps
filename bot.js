@@ -502,7 +502,7 @@ client.on('voiceStateUpdate', (o,n) => {
     }
 })
 client.on("ready", () => {
-    client.guilds.get("أيدي السيرفر").members.forEach(m => {
+    client.guilds.get("477015271455064065").members.forEach(m => {
         if (m.voiceChannel) {
             ss+=1
         };
