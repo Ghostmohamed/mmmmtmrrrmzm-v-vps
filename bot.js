@@ -431,7 +431,7 @@ client.on('message', message => {
 
 const jackeo = ['ايدي الحسب ' , 'هنا ايدي الاونر' , 'ايدي الاونر لثاني' , '']; //Jackeo  حقوقي
 client.on('message', message => { //Jackeo  حقوقي
-var prefix = "البرفركس"; //Jackeo  حقوقي
+var prefix = "."; //Jackeo  حقوقي
   if (message.author.bot) return; //Jackeo  حقوقي
   if (!message.content.startsWith(prefix)) return; //Jackeo  حقوقي
     var argresult = message.content.split(` `).slice(1).join(' '); //Jackeo  حقوقي
