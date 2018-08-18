@@ -287,18 +287,7 @@ message.channel.send({embed});
 
 
 
-client.on('ready', () = {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message = {
-            if (message.content === 'السلام عليكم') {
-              message.channel.send('و عليكم السلام');
-              message.channel.sendFile(.Photo.PNG);
-               
 
-            }
-});
-كود الرد مع الصورة
 const Discord = require("discord.js"); // بكج
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require('fs'); // بكج
