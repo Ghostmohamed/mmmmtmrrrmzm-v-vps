@@ -197,6 +197,91 @@ client.on('ready', () => {
 
 
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'السلام عليكم ') {
+              message.channel.send('**وعليكم السلام ورحمة الله وبركاته**');
+              
+               
+
+            }
+});
+
+
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'سلام عليكم ') {
+              message.channel.send('**وعليكم السلام ورحمة الله وبركاته**');
+              
+               
+
+            }
+});
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'باك ') {
+              message.channel.send('**ولككم حبيبي**');
+              
+               
+
+            }
+});
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'باكك ') {
+              message.channel.send('**ولككم حبيبي**');
+              
+               
+
+            }
+});
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'برب ') {
+              message.channel.send('**تيت . لاتتأخر علينا حبيبي**');
+              
+               
+
+            }
+});
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'يلا برب ') {
+              message.channel.send('**تيت . لاتتأخر علينا حبيبي**');
+              
+               
+
+            }
+});
+
+
+
+
 
 
 client.on('guildMemberAdd', member => {
