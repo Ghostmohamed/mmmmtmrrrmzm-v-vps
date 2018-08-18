@@ -555,6 +555,14 @@ client.on('message', msg => {
 
 
 
+  client.on('message', msg => {//msg
+    if (msg.content === 'السلام عليكم') {
+      msg.channel.send({file : "رابط الصورة الي تبي يرد فيه"})
+    }
+  });;
+
+
+
 
 
 
