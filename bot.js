@@ -672,6 +672,15 @@ client.on('message', function(msg) {
   });
 
 
+ const snekfetch = require("snekfetch");
+  client.on('message', async message => {
+if(message.author.bot) return;
+if (message.channel.guild) {
+if (message.content.startsWith(prefix - `قطه`)) {
+            const { body } = await snekfetch.get("http://aws.random.cat/meow");
+            return message.channel.send({ file: body.file });
+}}});
+  
 
 
 
