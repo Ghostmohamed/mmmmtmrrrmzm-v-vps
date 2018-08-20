@@ -237,7 +237,7 @@ var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_68
     client.on('message', message => {
         if (message.author.bot) return;
         var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'لو خيروك')) {
+    if(message.content.startsWith(prefix + 'لو-خيروك')) {
          var cat = new Discord.RichEmbed()
 .setImage(rebel[Math.floor(Math.random() * rebel.length)])
 message.channel.sendEmbed(cat);
