@@ -873,7 +873,7 @@ client.on('ready', () => {
     console.log(`on  ${client.guilds.size} Servers `);
     console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`سوف اكون جاهز قريبا`,"http://twitch.tv/y04zgamer")
+    client.user.setGame(`عــيد مباركْ لجميع أعضاء كلان دمــآر`,"http://twitch.tv/y04zgamer")
     client.user.setStatus("dnd")
  });
 
